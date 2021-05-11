@@ -1,6 +1,7 @@
 import React from 'react';
 import Course from './Course';
 
+
 function NameList(){
     const namelist  = [{
         "id" : 1,
@@ -88,25 +89,14 @@ function NameList(){
     };
     return(
         <div>
-            <h1>Hello React 2021</h1>
-            <ul>
+          <div className = "container" mt-4>
+          <ul>
                 {nameListComponent()}
-                 <Course 
-                    name = {`${namelist[1].name.title} ${namelist[1].name.first}  ${namelist[1].name.last}`}  
-                    city = {namelist[1].location.city }  
-                    email = {namelist[1].email } 
-                    dateofbirthday = {namelist[1].dob.date } 
-                    avatar = {namelist[1].picture.medium } 
-                />
-                 <Course 
-                    name = {`${namelist[2].name.title} ${namelist[2].name.first}  ${namelist[2].name.last}`}  
-                    city = {namelist[2].location.city }  
-                    email = {namelist[2].email } 
-                    dateofbirthday = {namelist[2].dob.date} 
-                    avatar = {namelist[2].picture.medium } 
-                />
+                 
                
             </ul>
+          </div>  
+            
         </div>
         
     );
